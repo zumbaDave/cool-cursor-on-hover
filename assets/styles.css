@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-family: 'Bebas Neue';
+}
+
+h1 {
+  font-size: 13em;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.cursor, .hand {
+  position: fixed;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.cursor {
+  background: black;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  z-index: 999;
+}
+
+.hand {
+  background-color: #9b00ff;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  z-index: 9999;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  opacity: 0;
+}
+
+.hand svg {
+  width: 80px;
+}
+/*# sourceMappingURL=styles.css.map */
